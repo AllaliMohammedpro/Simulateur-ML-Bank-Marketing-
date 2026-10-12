@@ -1,0 +1,33 @@
+# Python & Environnements virtuels
+.venv/
+backend/.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.class
+*.ipynb_checkpoints
+
+# Frontend (Node / Vite / React)
+node_modules/
+frontend/node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Variables d'environnement & Secrets
+.env
+*.env
+.env.local
+
+# Modèles ML et artefacts volumineux
+*.joblib
+*.pkl
+*.h5
+*.onnx
+
+# IDEs & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

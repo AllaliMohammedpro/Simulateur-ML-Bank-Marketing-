@@ -1,0 +1,91 @@
+{
+  "training_rows": 3616,
+  "test_rows": 905,
+  "models": {
+    "svm": {
+      "cv_f1_default_threshold": 0.5344384865677595,
+      "validation_f1_tuned_threshold": 0.5602536997885835,
+      "threshold": 0.2738135344207967,
+      "parameters": {
+        "model__C": 1,
+        "model__gamma": "scale",
+        "model__class_weight": "balanced"
+      },
+      "test": {
+        "accuracy": 0.8828729281767956,
+        "precision": 0.4925373134328358,
+        "recall": 0.6346153846153846,
+        "f1_score": 0.5546218487394958,
+        "confusion_matrix": [
+          [
+            733,
+            68
+          ],
+          [
+            38,
+            66
+          ]
+        ]
+      }
+    },
+    "random_forest": {
+      "cv_f1_default_threshold": 0.48368905628792636,
+      "validation_f1_tuned_threshold": 0.580259222333001,
+      "threshold": 0.24661846455975295,
+      "parameters": {
+        "model__n_estimators": 400,
+        "model__min_samples_split": 10,
+        "model__min_samples_leaf": 4,
+        "model__max_features": 0.5,
+        "model__max_depth": 14,
+        "model__class_weight": null
+      },
+      "test": {
+        "accuracy": 0.8685082872928177,
+        "precision": 0.4539877300613497,
+        "recall": 0.7115384615384616,
+        "f1_score": 0.5543071161048689,
+        "confusion_matrix": [
+          [
+            712,
+            89
+          ],
+          [
+            30,
+            74
+          ]
+        ]
+      }
+    },
+    "mlp": {
+      "cv_f1_default_threshold": 0.4030172436560954,
+      "validation_f1_tuned_threshold": 0.5105438401775805,
+      "threshold": 0.26067787898223616,
+      "parameters": {
+        "model__hidden_layer_sizes": [
+          64,
+          32
+        ],
+        "model__alpha": 0.0001,
+        "model__learning_rate_init": 0.001
+      },
+      "test": {
+        "accuracy": 0.8707182320441988,
+        "precision": 0.45517241379310347,
+        "recall": 0.6346153846153846,
+        "f1_score": 0.5301204819277109,
+        "confusion_matrix": [
+          [
+            722,
+            79
+          ],
+          [
+            38,
+            66
+          ]
+        ]
+      }
+    }
+  },
+  "recommended_model": "random_forest"
+}
